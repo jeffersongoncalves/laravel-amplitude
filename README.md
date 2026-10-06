@@ -1,13 +1,13 @@
 <div class="filament-hidden">
 
-![Laravel Amplitude](https://raw.githubusercontent.com/jeffersongoncalves/laravel-amplitude/master/art/jeffersongoncalves-laravel-amplitude.png)
+![Laravel Amplitude](https://raw.githubusercontent.com/jeffersongoncalves/laravel-amplitude/main/art/jeffersongoncalves-laravel-amplitude.png)
 
 </div>
 
 # Laravel Amplitude
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/laravel-amplitude.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-amplitude)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-amplitude/fix-php-code-style-issues.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/laravel-amplitude/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-amplitude/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/laravel-amplitude/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/laravel-amplitude.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-amplitude)
 
 This Laravel package seamlessly integrates the [Amplitude Browser SDK](https://amplitude.com/docs/sdks/analytics/browser/browser-sdk-2) into your Blade templates. Easily track user interactions, page views, and product usage directly within your Laravel application, with all configuration managed via database settings using [spatie/laravel-settings](https://github.com/spatie/laravel-settings).
