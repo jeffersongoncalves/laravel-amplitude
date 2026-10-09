@@ -5,8 +5,8 @@
 @endphp
 
 @if(!empty($settings->api_key))
-<script type="text/javascript" src="{{ $settings->custom_lib_url ?: 'https://cdn.amplitude.com/script/'.$settings->api_key.'.js' }}"></script>
-<script type="text/javascript">
+<script @if(\Illuminate\Support\Facades\Vite::cspNonce()) nonce="{{ \Illuminate\Support\Facades\Vite::cspNonce() }}" @endif type="text/javascript" src="{{ $settings->custom_lib_url ?: 'https://cdn.amplitude.com/script/'.$settings->api_key.'.js' }}"></script>
+<script @if(\Illuminate\Support\Facades\Vite::cspNonce()) nonce="{{ \Illuminate\Support\Facades\Vite::cspNonce() }}" @endif type="text/javascript">
     (function () {
         var config = {!! json_encode($settings->toJsConfig(), JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!};
         config.logLevel = window.amplitude.Types.LogLevel.{{ $settings->debug ? 'Debug' : 'None' }};
